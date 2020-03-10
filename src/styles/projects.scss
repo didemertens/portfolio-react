@@ -10,4 +10,25 @@
     margin: 0;
     background-color: $white;
   }
+
+  img {
+    max-height: 300px;
+    max-width: 40vw;
+  }
+
+  .projects-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .project-details {
+      max-width: 40vw;
+      padding: 50px;
+
+      p {
+        text-align: left;
+      }
+    }
+  }
 }

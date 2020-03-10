@@ -1,10 +1,11 @@
 import React from 'react'
 import './styles/main.scss'
 
+import Nav from './components/Nav'
 import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
-import Nav from './components/Nav'
+import Contact from './components/Contact'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
       <Home />
       <About />
       <Projects />
+      <Contact />
     </main >
   )
 }
