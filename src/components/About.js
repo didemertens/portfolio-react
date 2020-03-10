@@ -6,6 +6,7 @@ import { AnimatedOnScroll } from "react-animated-css-onscroll"
 
 import sleeper from '../assets/sleeper.jpg'
 import trees from '../assets/trees.jpg'
+import canals from '../assets/canals.png'
 
 class About extends React.Component {
   state = {
@@ -43,14 +44,26 @@ class About extends React.Component {
               <div className={!this.state.moreOpen ? "about-column-text-hidden" : "about-column-text-visible"}>
                 <h2>Most eye-opening read</h2>
                 <p>Did you know that trees form a complex community of parents and children?
-                  And that the parents actually care for their children by giving them nutrients and looking out for diseases?
-                  I didn't either, untill I read Peter Wohlleben's "The Hidden Life of Trees". In this book he shares all of this insights, making you fall in love with trees.
+                  And that the parents actually care for their children by giving them nutrients?
+                  I didn't either, untill I read Peter Wohlleben's "The Hidden Life of Trees". In this book he shares all of
+                  this insights, making you fall in love with trees.
                   </p>
                 <img src={trees} alt="The Hidden Life of Trees" />
                 <div className="painting">
-                  <h2>My favourite painting</h2>
-                  <p>I love Tamara de Lempicka's work. I even made a copied a couple of her paintings! My favourite is "The Sleeper" because of the bold lines and calm colours.</p>
+                  <h2>Most beautiful painting</h2>
+                  <p>I love Tamara de Lempicka's work. I even copied a couple of her paintings! She was a Polish artist who lived
+                    for most of her life in France and the US. She mainly created paintings of women in the Art Deco style.
+                    It's a hard choice, but if I have to pick then my favourite work would be "The Sleeper" because of the
+                    bold lines and calm colours.</p>
                   <img src={sleeper} alt="The Sleeper" />
+                </div>
+                <div className="painting">
+                  <h2>Most inspiring website</h2>
+                  <p>My favourite website is <a href="https://canals-amsterdam.nl/">Canals Amsterdam</a>. Not because
+                  it's about the Netherlands (although I'm bound to be a bit baised), but because they show the history of
+                  the canals in a very unique way. You can take a "scroll" from the 16th century to today, seeing through
+                  paintings and pictures how the canals were used during this time.</p>
+                  <img src={canals} alt="Canals Amsterdam" />
                 </div>
               </div>
             </Animated>
