@@ -9,30 +9,60 @@
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   .home-greeting {
     display: flex;
-    width: 95vw;
-    align-items: center;
-    justify-content: flex-start;
+    width: 90vw;
+    justify-content: flex-end;
 
     h2 {
-      color: $white;
-      text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      color: $dark-grey;
+      letter-spacing: 5px;
       margin: 0;
       text-transform: uppercase;
-      font-size: 5rem;
+      font-size: 1rem;
     }
   }
 
   .home-header {
     background-color: $mint-green;
-    width: 100vw;
-    height: 75vh;
+    width: 90vw;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .home-greeting-mirror {
+      display: flex;
+      width: 90vw;
+      justify-content: flex-end;
+      margin-top: -36vh;
+
+      h2 {
+        color: $white;
+        letter-spacing: 5px;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 1rem;
+        transform: rotateX(180deg);
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      color: white;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      font-size: 4.5rem;
+    }
+
+    h4 {
+      margin: 0;
+      color: $dark-grey;
+      font-size: 4rem;
+    }
   }
 }

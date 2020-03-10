@@ -1,5 +1,4 @@
 import React from 'react'
-import { Animated } from "react-animated-css"
 
 class Home extends React.Component {
   state = {
@@ -24,14 +23,17 @@ class Home extends React.Component {
     const { greetings, number } = this.state
     return (
       <section className="home-section" id="home">
+        <div className="home-greeting">
+          <h2>{greetings[number]}</h2>
+        </div>
         <div className="home-header">
-          {/* <Animated animationIn="bounce" animationOut="zoomOutDown" animationInDuration={1000} animationOutDuration={1000} isVisible={true}> */}
-          <div className="home-greeting">
+          <div className="home-greeting-mirror">
             <h2>{greetings[number]}</h2>
           </div>
-          {/* </Animated> */}
-          <h3>I'm Dide</h3>
-          <h3>Web Developer</h3>
+          <div className="home-header-dark">
+            <h3>Dide Mertens</h3>
+          </div>
+          <h4>Web Developer</h4>
         </div>
       </section>
     )
