@@ -1,5 +1,7 @@
+@import './common/colors';
+
 .home-section {
-  background-color: lightblue;
+  background-color: $white;
   margin: 0;
   padding: 0;
   height: 100vh;
