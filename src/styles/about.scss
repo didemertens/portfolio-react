@@ -1,0 +1,46 @@
+@import './common/colors';
+
+.about-section {
+  background-color: $white;
+  min-height: 100vh;
+  text-align: center;
+
+  .about-columns {
+    text-align: left;
+    display: flex;
+    padding: 50px;
+
+    .about-column-text, .about-skill-column {
+      max-width: 50vw;
+      padding: 50px;
+    }
+
+    .about-column-text {
+      img {
+        max-height: 150px;
+      }
+    }
+
+    .about-column-text-hidden {
+      display: none;
+    }
+
+    .about-skill-column {
+      display: flex;
+      flex-wrap: wrap;
+
+      .skill-icon-div {
+        padding: 20px;
+      }
+
+      .skill-icon {
+        font-size: 50px;
+      }
+    }
+  }
+
+  h2 {
+    margin: 0;
+  }
+}
+

@@ -1,0 +1,13 @@
+@import './common/colors';
+
+.projects-section {
+  background-color: $white;
+  min-height: 100vh;
+  text-align: center;
+  
+  h2 {
+    border-top: 50px $white solid;
+    margin: 0;
+    background-color: $white;
+  }
+}
