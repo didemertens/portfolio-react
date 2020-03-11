@@ -68,12 +68,15 @@ class About extends React.Component {
                   </div>
                 </div>
               </Animated>
-              {!this.state.moreOpen
-                ?
-                <button onClick={this.handleClick}>Tell me more</button>
-                :
-                <button onClick={this.handleClick}>Less please</button>
-              }
+              <div className="about-btn-more">
+                {!this.state.moreOpen
+                  ?
+                  <button className="column-text-btn" onClick={this.handleClick}>Tell me more</button>
+                  :
+                  <button className="column-text-btn" onClick={this.handleClick}>Less please</button>
+                }
+              </div>
+
             </div>
             <AnimatedOnScroll animationIn="bounceInRight" animationInDuration={1500} isVisible={true}>
               <div className="about-skill-column">
