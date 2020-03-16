@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaNode, FaSass, FaGithub } from 'react-icons/fa'
 import { IoLogoJavascript } from "react-icons/io"
-import { DiDjango, DiMongodb, DiPostgresql } from "react-icons/di"
+import { DiDjango, DiMongodb, DiPostgresql, DiHeroku } from "react-icons/di"
 import { GiCoffeeCup } from "react-icons/gi"
 
 import { Animated } from "react-animated-css"
@@ -60,12 +60,16 @@ class About extends React.Component {
                     <p>React</p>
                   </div>
                   <div className="skill-icon-div">
+                    <FaNode className="skill-icon" />
+                    <p>Node.js</p>
+                  </div>
+                  <div className="skill-icon-div">
                     <FaPython className="skill-icon" />
                     <p>Python</p>
                   </div>
                   <div className="skill-icon-div">
-                    <FaNode className="skill-icon" />
-                    <p>Node.js</p>
+                    <DiDjango className="skill-icon" />
+                    <p>Django</p>
                   </div>
                   <div className="skill-icon-div">
                     < FaHtml5 className="skill-icon" />
@@ -76,10 +80,6 @@ class About extends React.Component {
                     <p>CSS3</p>
                   </div>
                   <div className="skill-icon-div">
-                    <DiDjango className="skill-icon" />
-                    <p>Django</p>
-                  </div>
-                  <div className="skill-icon-div">
                     <FaSass className="skill-icon" />
                     <p>Sass</p>
                   </div>
@@ -87,12 +87,6 @@ class About extends React.Component {
                     <GiCoffeeCup className="skill-icon" />
                     <p>Mocha</p>
                   </div>
-
-                  {/* <div className="skill-icon-div">
-                  <img src="" alt="Express icon" />
-                  <p>Express</p>
-                </div> */}
-
                   <div className="skill-icon-div">
                     <DiMongodb className="skill-icon" />
                     <p>MongoDB</p>
@@ -100,6 +94,10 @@ class About extends React.Component {
                   <div className="skill-icon-div">
                     <DiPostgresql className="skill-icon" />
                     <p>PostgreSQL</p>
+                  </div>
+                  <div className="skill-icon-div">
+                    <DiHeroku className="skill-icon" />
+                    <p>Heroku</p>
                   </div>
                   <div className="skill-icon-div">
                     <FaGithub className="skill-icon" />

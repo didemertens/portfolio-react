@@ -38,6 +38,8 @@
     .about-skill-column {
       display: flex;
       flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
 
       .skill-icon-div {
         padding: 20px;
