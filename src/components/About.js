@@ -171,8 +171,8 @@ class About extends React.Component {
               </div>
             </Animated>
           </div>
-          <div ref={(ref) => this.moreText = ref}></div>
         </section >
+        <div ref={(ref) => this.moreText = ref}></div>
       </>
     )
   }

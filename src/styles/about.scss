@@ -69,17 +69,12 @@
     width: 90vw;
     display: flex;
     justify-content: center;
-    height: 500px;
-    margin-bottom: 100px;
+    height: 68vh;
 
     a {
       margin: 30px;
       text-decoration: none;
       color: $dark-grey;
-      &:visited {
-        text-decoration: none;
-        color: $dark-grey;
-      }
     }
 
     .about-book {
@@ -149,7 +144,6 @@
   }
 
   .column-text-btn {
-    margin-top: 25px;
     background-color: $light-grey;
     font-family: 'Maven Pro', sans-serif;
     border-radius: 5px;

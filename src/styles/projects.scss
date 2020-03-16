@@ -13,6 +13,12 @@
     color: $dark-grey;
   }
 
+  h3 {
+    color: $dark-grey;
+    font-size: 1.4rem;
+    margin: 5px;
+  }
+
   img {
     max-height: 300px;
     max-width: 40vw;
@@ -24,12 +30,30 @@
     align-items: center;
     flex-wrap: wrap;
 
+    a {
+      display: inline-block;
+      margin: 30px;
+      text-decoration: none;
+      color: black;
+      transition: all .3s ease-in-out;
+      &:hover {
+        transform: scale(.96);
+      }
+    }
+
     .project-details {
       max-width: 40vw;
       padding: 50px;
-
+      max-height: 500px;
+      
       p {
         text-align: left;
+      }
+      
+      .project-details-text {
+        margin-top: -5px;
+        background-color: $light-grey;
+        padding: 20px;
       }
     }
   }
