@@ -2,7 +2,7 @@ import React from 'react'
 
 class Home extends React.Component {
   state = {
-    greetings: ['Hello', 'Bonjour', 'Hola', 'Guten Tag', 'Hallo', 'Salve'],
+    greetings: ['Hello', 'Salut', 'Hola', 'Tere', 'Hallo', 'Ciao', 'Halløj', 'Terve', 'Hei', 'Goeie', 'Hej'],
     number: 0
   }
 

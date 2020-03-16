@@ -1,11 +1,9 @@
 import React from 'react'
-import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaNode, FaSass, FaGithub } from 'react-icons/fa'
-import { IoLogoJavascript } from "react-icons/io"
-import { DiDjango, DiMongodb, DiPostgresql, DiHeroku } from "react-icons/di"
-import { GiCoffeeCup } from "react-icons/gi"
-
 import { Animated } from "react-animated-css"
 import { AnimatedOnScroll } from "react-animated-css-onscroll"
+
+import MoreAbout from './MoreAbout'
+import SkillsAbout from './SkillsAbout'
 
 class About extends React.Component {
   state = {
@@ -47,69 +45,11 @@ class About extends React.Component {
                 applications using <strong>React</strong>, <strong>Node.js</strong> and <strong>Django</strong>.
                 I am currently looking for a position as a web developer in a passionate and supportive team.</p>
               </div>
-
               <AnimatedOnScroll animationIn="bounceInRight" animationInDuration={1500} isVisible={true}>
-                <div className="about-skill-column">
-
-                  <div className="skill-icon-div">
-                    <IoLogoJavascript className="skill-icon" />
-                    <p>JavaScript</p>
-                  </div>
-                  <div className="skill-icon-div">
-                    <FaReact className="skill-icon" />
-                    <p>React</p>
-                  </div>
-                  <div className="skill-icon-div">
-                    <FaNode className="skill-icon" />
-                    <p>Node.js</p>
-                  </div>
-                  <div className="skill-icon-div">
-                    <FaPython className="skill-icon" />
-                    <p>Python</p>
-                  </div>
-                  <div className="skill-icon-div">
-                    <DiDjango className="skill-icon" />
-                    <p>Django</p>
-                  </div>
-                  <div className="skill-icon-div">
-                    < FaHtml5 className="skill-icon" />
-                    <p>HTML5</p>
-                  </div>
-                  <div className="skill-icon-div">
-                    < FaCss3Alt className="skill-icon" />
-                    <p>CSS3</p>
-                  </div>
-                  <div className="skill-icon-div">
-                    <FaSass className="skill-icon" />
-                    <p>Sass</p>
-                  </div>
-                  <div className="skill-icon-div">
-                    <GiCoffeeCup className="skill-icon" />
-                    <p>Mocha</p>
-                  </div>
-                  <div className="skill-icon-div">
-                    <DiMongodb className="skill-icon" />
-                    <p>MongoDB</p>
-                  </div>
-                  <div className="skill-icon-div">
-                    <DiPostgresql className="skill-icon" />
-                    <p>PostgreSQL</p>
-                  </div>
-                  <div className="skill-icon-div">
-                    <DiHeroku className="skill-icon" />
-                    <p>Heroku</p>
-                  </div>
-                  <div className="skill-icon-div">
-                    <FaGithub className="skill-icon" />
-                    <p>GitHub</p>
-                  </div>
-
-                </div>
+                <SkillsAbout />
               </AnimatedOnScroll>
             </div>
           </div>
-
-
           <div className="about-btn-more">
             {!this.state.moreOpen
               ?
@@ -118,55 +58,9 @@ class About extends React.Component {
               <button className="column-text-btn" onClick={this.handleClick}>Less please</button>
             }
           </div>
-
           <div className={!this.state.moreOpen ? "about-column-text-hidden" : ""}>
             <Animated animationIn="bounceInLeft" animationOut="bounceOutLeft" animationInDuration={2000} animationOutDuration={1000} isVisible={this.state.animationVisible}>
-              <div className="about-text-more">
-
-                <a href="https://www.goodreads.com/book/show/28256439-the-hidden-life-of-trees"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <div className="home-about-more-box about-book">
-                    <div className="about-book-text">
-                      <h3>Most eye-opening read</h3>
-                      <p>Did you know that trees form a complex community of parents and children?
-                      And that the parents actually care for their children by giving them nutrients and looking out for insects?
-                      I didn't either, untill I read Peter Wohlleben's book "The Hidden Life of Trees". In this book he shares all of
-                      this insights, which made me fall in love with trees.
-                  </p>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="https://www.wikiart.org/en/tamara-de-lempicka/the-sleeper-1932"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <div className="home-about-more-box about-painting">
-                    <div className="about-painting-text">
-                      <h3>Most beautiful painting</h3>
-                      <p>I love Tamara de Lempicka's work. I even copied a couple of her paintings! She was a Polish artist who lived
-                      for most of her life in France and the US. She mainly created paintings of women in the Art Deco style.
-                      It's a hard choice, but if I have to pick then my favourite work would be "The Sleeper" because of the
-                    bold lines and calm colours.</p>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="https://canals-amsterdam.nl/"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <div className="home-about-more-box about-canals">
-                    <div className="about-canals-text">
-                      <h3>Most inspiring website</h3>
-                      <p>My favourite website is Canals Amsterdam. Not because it's about the Netherlands (although I'm bound
-                      to be a bit baised), but because they show the history of the canals in a very unique way. You can take
-                      a "scroll" from the 16th century to today, seeing through paintings and pictures how the canals were
-                    used during this time.</p>
-                    </div>
-                  </div>
-                </a>
-
-              </div>
+              <MoreAbout />
             </Animated>
           </div>
         </section >

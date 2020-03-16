@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaEnvelope, FaGithub, FaLinkedin, FaLaptopCode } from "react-icons/fa"
 
 const Contact = () => (
   <section className="contact-section" id="contact">
@@ -13,6 +13,10 @@ const Contact = () => (
         <div className="contact-text-icon">
           <FaGithub className="contact-icon" />
           <a href="https://github.com/didemertens" target="_blank" rel="noopener noreferrer">github.com/didemertens</a>
+        </div>
+        <div className="contact-text-icon">
+          <FaLaptopCode className="contact-icon" />
+          <a href="https://www.codewars.com/users/DMertens" target="_blank" rel="noopener noreferrer">codewars.com/users/DMertens</a>
         </div>
         <div className="contact-text-icon">
           <FaLinkedin className="contact-icon" />

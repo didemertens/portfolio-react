@@ -20,7 +20,6 @@ const Projects = () => {
               <p>This is a place for developers where they can post and comment on questions
               and chat with each other. After registering, users also automatically get a buddy
               to promote further communication.</p>
-
               <p>It was a solo project built in 1 week with React, React Hooks, Django REST and PostgreSQL.</p>
             </div>
           </a>
