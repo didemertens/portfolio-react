@@ -66,3 +66,36 @@
     }
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .home-section {
+    .home-header {
+      .home-greeting-mirror {
+        margin-top: -50vh;
+      }
+      h3 {
+        font-size: 3rem ;
+      }
+      h4 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .home-section {
+    .home-header {
+      .home-greeting-mirror {
+        margin-top: -40vh;
+      }
+      h3 {
+        margin-top: 20vh;
+        font-size: 2.5rem ;
+      }
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
