@@ -40,7 +40,7 @@
       display: flex;
       width: 90vw;
       justify-content: flex-end;
-      margin-top: -8vh;
+      margin-top: -80px;
 
       h2 {
         color: $white;
@@ -81,7 +81,7 @@
   .home-section {
     .home-header {
       .home-greeting-mirror {
-        margin-top: -9vh;
+        margin-top: -78px;
       }
     }
   }
@@ -91,7 +91,7 @@
   .home-section {
     .home-header {
       .home-greeting-mirror {
-        margin-top: -8vh;
+        margin-top: -90px;
       }
     }
   }
@@ -101,7 +101,7 @@
   .home-section {
     .home-header {
       .home-greeting-mirror {
-        margin-top: -25vh;
+        margin-top: -200px;
       }
       h3 {
         font-size: 3rem ;
@@ -117,7 +117,7 @@
   .home-section {
     .home-header {
       .home-greeting-mirror {
-        margin-top: -15vh;
+        margin-top: -90px;
       }
       h3 {
         margin-top: 20vh;
@@ -128,4 +128,34 @@
       }
     }
   }
+}
+
+// @media only screen and (min-width: 1250px), (display-mode: fullscreen) {
+//   .home-section {
+//     .home-header {
+//       .home-greeting-mirror {
+//         margin-top: -120px;
+//       }
+//     }
+//   }
+// }
+
+@media all and (min-width: 1250px) and (display-mode: fullscreen) {
+  .home-section {
+        .home-header {
+          .home-greeting-mirror {
+            margin-top: -120px;
+          }
+        }
+      }
+}
+
+@media all and (min-width: 700px) and (max-width: 800px) {
+  .home-section {
+        .home-header {
+          .home-greeting-mirror {
+            margin-top: -250px;
+          }
+        }
+      }
 }
