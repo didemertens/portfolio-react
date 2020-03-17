@@ -40,7 +40,7 @@
       display: flex;
       width: 90vw;
       justify-content: flex-end;
-      margin-top: -36vh;
+      margin-top: -8vh;
 
       h2 {
         color: $white;
@@ -65,13 +65,43 @@
       font-size: 4rem;
     }
   }
+
+  .home-arrow {
+    font-size: 50px;
+    color: $dark-grey;
+    margin-top: 20vh;
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .home-section {
+    .home-header {
+      .home-greeting-mirror {
+        margin-top: -9vh;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .home-section {
+    .home-header {
+      .home-greeting-mirror {
+        margin-top: -8vh;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .home-section {
     .home-header {
       .home-greeting-mirror {
-        margin-top: -50vh;
+        margin-top: -25vh;
       }
       h3 {
         font-size: 3rem ;
@@ -87,7 +117,7 @@
   .home-section {
     .home-header {
       .home-greeting-mirror {
-        margin-top: -40vh;
+        margin-top: -15vh;
       }
       h3 {
         margin-top: 20vh;

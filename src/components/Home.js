@@ -1,4 +1,5 @@
 import React from 'react'
+import { IoIosArrowDropdown } from "react-icons/io"
 
 class Home extends React.Component {
   state = {
@@ -19,23 +20,31 @@ class Home extends React.Component {
     }
   }
 
+  handleClick = () => {
+    this.nextComponent.scrollIntoView({ behavior: "smooth" })
+  }
+
   render() {
     const { greetings, number } = this.state
     return (
-      <section className="home-section" id="home">
-        <div className="home-greeting">
-          <h2>{greetings[number]}</h2>
-        </div>
-        <div className="home-header">
-          <div className="home-greeting-mirror">
+      <>
+        <section className="home-section" id="home">
+          <div className="home-greeting">
             <h2>{greetings[number]}</h2>
           </div>
-          <div className="home-header-dark">
-            <h3>Dide Mertens</h3>
+          <div className="home-header">
+            <div className="home-greeting-mirror">
+              <h2>{greetings[number]}</h2>
+            </div>
+            <div className="home-header-dark">
+              <h3>Dide Mertens</h3>
+            </div>
+            <h4>Web Developer</h4>
+            <IoIosArrowDropdown onClick={this.handleClick} className="home-arrow" />
           </div>
-          <h4>Web Developer</h4>
-        </div>
-      </section>
+        </section>
+        <div ref={(ref) => this.nextComponent = ref}></div>
+      </>
     )
   }
 }
