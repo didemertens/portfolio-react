@@ -13,10 +13,16 @@
   justify-content: center;
   align-items: center;
 
+  .home-greeting-block {
+    margin-bottom: 85vh;
+  }
+
   .home-greeting {
     display: flex;
     width: 90vw;
     justify-content: flex-end;
+    z-index: 10;
+    position: relative;
 
     h2 {
       color: $dark-grey;
@@ -27,7 +33,26 @@
     }
   }
 
+  .home-greeting-mirror {
+    display: flex;
+    color: red;
+    width: 90vw;
+    justify-content: flex-end;
+    z-index: 10;
+    position: relative;
+
+    h2 {
+      color: $white;
+      letter-spacing: 5px;
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 1rem;
+      transform: rotateX(180deg);
+    }
+  }
+
   .home-header {
+    position: absolute;
     background-color: $mint-green;
     width: 90vw;
     height: 85vh;
@@ -36,21 +61,6 @@
     justify-content: center;
     align-items: center;
 
-    .home-greeting-mirror {
-      display: flex;
-      width: 90vw;
-      justify-content: flex-end;
-      margin-top: -80px;
-
-      h2 {
-        color: $white;
-        letter-spacing: 5px;
-        margin: 0;
-        text-transform: uppercase;
-        font-size: 1rem;
-        transform: rotateX(180deg);
-      }
-    }
 
     h3 {
       text-transform: uppercase;
@@ -77,32 +87,9 @@
   }
 }
 
-@media only screen and (min-width: 1250px) {
-  .home-section {
-    .home-header {
-      .home-greeting-mirror {
-        margin-top: -78px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 980px) {
-  .home-section {
-    .home-header {
-      .home-greeting-mirror {
-        margin-top: -90px;
-      }
-    }
-  }
-}
-
 @media only screen and (max-width: 700px) {
   .home-section {
     .home-header {
-      .home-greeting-mirror {
-        margin-top: -200px;
-      }
       h3 {
         font-size: 3rem ;
       }
@@ -116,9 +103,6 @@
 @media only screen and (max-width: 400px) {
   .home-section {
     .home-header {
-      .home-greeting-mirror {
-        margin-top: -90px;
-      }
       h3 {
         margin-top: 20vh;
         font-size: 2.5rem ;
@@ -128,34 +112,4 @@
       }
     }
   }
-}
-
-// @media only screen and (min-width: 1250px), (display-mode: fullscreen) {
-//   .home-section {
-//     .home-header {
-//       .home-greeting-mirror {
-//         margin-top: -120px;
-//       }
-//     }
-//   }
-// }
-
-@media all and (min-width: 1250px) and (display-mode: fullscreen) {
-  .home-section {
-        .home-header {
-          .home-greeting-mirror {
-            margin-top: -120px;
-          }
-        }
-      }
-}
-
-@media all and (min-width: 700px) and (max-width: 800px) {
-  .home-section {
-        .home-header {
-          .home-greeting-mirror {
-            margin-top: -250px;
-          }
-        }
-      }
 }

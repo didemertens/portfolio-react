@@ -29,13 +29,15 @@ class Home extends React.Component {
     return (
       <>
         <section className="home-section" id="home">
-          <div className="home-greeting">
-            <h2>{greetings[number]}</h2>
-          </div>
-          <div className="home-header">
+          <div className="home-greeting-block">
+            <div className="home-greeting">
+              <h2>{greetings[number]}</h2>
+            </div>
             <div className="home-greeting-mirror">
               <h2>{greetings[number]}</h2>
             </div>
+          </div>
+          <div className="home-header">
             <div className="home-header-dark">
               <h3>Dide Mertens</h3>
             </div>
