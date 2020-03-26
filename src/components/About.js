@@ -7,8 +7,8 @@ import SkillsAbout from './SkillsAbout'
 
 class About extends React.Component {
   state = {
-    moreOpen: false,
-    animationVisible: false
+    moreOpen: true,
+    animationVisible: true
   }
 
   ref = React.createRef();
@@ -22,7 +22,7 @@ class About extends React.Component {
       setTimeout(() => {
         this.setState({ moreOpen: false })
         this.lessText.scrollIntoView({ behavior: "smooth" })
-      }, 800);
+      }, 1000);
     }
   }
 
@@ -39,13 +39,19 @@ class About extends React.Component {
                 Because I love to solve problems, I was immediately hooked and taught myself the fundamentals of web development
                 through every online resource I could find. I used my newly acquired knowledge to improve the communication about
                 upcoming and new translation projects between the localisation and development team, but soon realised I wanted to
-                be on the other side of that conversation. I decided it was the right time to switch careers and enrolled in
-                General Assembly’s Software Engineering Immersive. I recently completed this course where in
+                be on the other side of that conversation.
+                </p>
+                <p>
+                  I decided it was the right time to switch careers and enrolled in
+                  General Assembly’s Software Engineering Immersive. I recently completed this course where in
                 addition to finetuning my <strong>JavaScript</strong> and <strong>Python</strong> skills, I learned how to build
                 applications using <strong>React</strong>, <strong>Node.js</strong> and <strong>Django</strong>.
                 I am currently looking for a position as a web developer in a passionate and supportive team.</p>
               </div>
-              <AnimatedOnScroll animationIn="bounceInRight" animationInDuration={1500} isVisible={true}>
+              <AnimatedOnScroll
+                animationIn="bounceInRight"
+                animationInDuration={1500}
+                isVisible={true}>
                 <SkillsAbout />
               </AnimatedOnScroll>
             </div>
@@ -59,7 +65,12 @@ class About extends React.Component {
             }
           </div>
           <div className={!this.state.moreOpen ? "about-column-text-hidden" : ""}>
-            <Animated animationIn="bounceInLeft" animationOut="bounceOutLeft" animationInDuration={2000} animationOutDuration={1000} isVisible={this.state.animationVisible}>
+            <Animated
+              animationIn="bounceInLeft"
+              animationOut="bounceOutLeft"
+              animationInDuration={2000}
+              animationOutDuration={1000}
+              isVisible={this.state.animationVisible}>
               <MoreAbout />
             </Animated>
           </div>

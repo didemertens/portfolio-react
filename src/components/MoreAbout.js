@@ -25,7 +25,7 @@ const MoreAbout = () => (
           <h3>Most beautiful painting</h3>
           <p>I love Tamara de Lempicka's work. I even copied a couple of her paintings! She was a Polish artist who lived
           for most of her life in France and the US. She mainly created paintings of women in the Art Deco style.
-          It's a hard choice, but if I have to pick then my favourite work would be "The Sleeper" because of the
+          If I had to choose my favourite painting, it would be a tough choice but I'll go with "The Sleeper" because of the
         bold lines and calm colours.</p>
         </div>
       </div>

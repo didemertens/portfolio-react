@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaGithub, FaExternalLinkSquareAlt } from 'react-icons/fa'
+
 import git from '../assets/git.png'
 import outAbout from '../assets/out-about.png'
 import animated from '../assets/animated.png'
@@ -13,7 +15,7 @@ const Projects = () => {
       <div className="projects-list">
 
         <div className="project-details">
-          <a href="http://lets-git-together.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+          <div className="project-box">
             <img src={git} alt="Git Together" />
             <div className="project-details-text">
               <h3>Git Together</h3>
@@ -21,12 +23,18 @@ const Projects = () => {
               and chat with each other. After registering, users also automatically get a buddy
               to promote further communication.</p>
               <p>It was a solo project built in 1 week with React, React Hooks, Django REST and PostgreSQL.</p>
+              <a className="project-icons" href="https://github.com/didemertens/sei-project-4" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+              <a className="project-icons" href="http://lets-git-together.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <FaExternalLinkSquareAlt />
+              </a>
             </div>
-          </a>
+          </div>
         </div>
 
         <div className="project-details">
-          <a href="https://out-about.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+          <div className="project-box">
             <img src={outAbout} alt="Out and About" />
             <div className="project-details-text">
               <h3>Out and About</h3>
@@ -34,12 +42,18 @@ const Projects = () => {
               the search and sorting functionality, making it possible for users to find
               events with a postcode, type of activity, date and time.</p>
               <p>This was a group project lasting 8 days and we built it with React, Express, React, Node.js and MongoDB (MERN).</p>
+              <a className="project-icons" href="https://github.com/didemertens/sei-group-project" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+              <a className="project-icons" href="https://out-about.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <FaExternalLinkSquareAlt />
+              </a>
             </div>
-          </a>
+          </div>
         </div>
 
         <div className="project-details">
-          <a href="https://animated-api.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+          <div className="project-box">
             <img src={animated} alt="Animated" />
             <div className="project-details-text">
               <h3>Animated</h3>
@@ -48,12 +62,18 @@ const Projects = () => {
             a great experience as it stores all of the data in JSON. </p>
               <p>It took me 1 week to built using the MERN stack to create my own frontend and
             API in the backend.</p>
+              <a className="project-icons" href="https://github.com/didemertens/animated-api" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+              <a className="project-icons" href="https://animated-api.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <FaExternalLinkSquareAlt />
+              </a>
             </div>
-          </a>
+          </div>
         </div>
 
         <div className="project-details">
-          <a href="https://your-art-journey.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+          <div className="project-box">
             <img src={artJourney} alt="Art Journey" />
             <div className="project-details-text">
               <h3>Art Journey</h3>
@@ -62,12 +82,18 @@ const Projects = () => {
               Bulma to make styling the website easier and faster.</p>
               <p>This was a pair-programming project of 48 hours and was built with React and
             the Rijksmuseum API.</p>
+              <a className="project-icons" href="https://github.com/didemertens/sei-project2" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+              <a className="project-icons" href="https://your-art-journey.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <FaExternalLinkSquareAlt />
+              </a>
             </div>
-          </a>
+          </div>
         </div>
 
         <div className="project-details">
-          <a href="https://didemertens.github.io/sei-project-1/" target="_blank" rel="noopener noreferrer">
+          <div className="project-box">
             <img src={frogger} alt="Frogger" />
             <div className="project-details-text">
               <h3>Frogger</h3>
@@ -75,12 +101,18 @@ const Projects = () => {
               to get all 5 witches across the board, avoiding the different obstacles. The player
             uses the arrow keys to move and can pick from 3 difficulty levels.</p>
               <p>This project took me 9 days, using vanilla JavaScript, HTML and CSS.</p>
+              <a className="project-icons" href="https://github.com/didemertens/sei-project-1" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+              <a className="project-icons" href="https://didemertens.github.io/sei-project-1/" target="_blank" rel="noopener noreferrer">
+                <FaExternalLinkSquareAlt />
+              </a>
             </div>
-          </a>
+          </div>
         </div>
 
         <div className="project-details">
-          <a href="https://bookblogdide.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+          <div className="project-box">
             <img src={bookBlog} alt="Book Blog" />
             <div className="project-details-text">
               <h3>Book Blog</h3>
@@ -88,8 +120,14 @@ const Projects = () => {
               It's a book blog on which I can posts, edit and delete blogs
             and other users can comment on those blog posts.</p>
               <p>I built this in 2 weeks with Django, HTML, CSS and jQuery.</p>
+              <a className="project-icons" href="https://github.com/didemertens/bookblog" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+              <a className="project-icons" href="https://bookblogdide.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <FaExternalLinkSquareAlt />
+              </a>
             </div>
-          </a>
+          </div>
         </div>
 
       </div>

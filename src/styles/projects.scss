@@ -31,14 +31,22 @@
     align-items: center;
     flex-wrap: wrap;
 
-    a {
+    .project-box {
       display: inline-block;
       margin: 30px;
       text-decoration: none;
       color: black;
-      transition: all .3s ease-in-out;
-      &:hover {
-        transform: scale(.96);
+  
+      .project-icons {
+        color: $dark-grey;
+        font-size: 25px;
+        transition: all .3s ease-in-out;
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+        &:hover {
+          color: $dark-grey-green;
+        }
       }
     }
 
@@ -74,7 +82,7 @@
     .projects-list {
       margin: 0;
 
-      a {
+      .project-box {
         margin: 0;
       }
 
