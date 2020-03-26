@@ -74,7 +74,7 @@ const Projects = () => {
               <p>I created my own version of the game Frogger in which users need
               to get all 5 witches across the board, avoiding the different obstacles. The player
             uses the arrow keys to move and can pick from 3 difficulty levels.</p>
-              <p>It took me 9 days to built, using vanilla JavaScript, HTML and CSS</p>
+              <p>This project took me 9 days, using vanilla JavaScript, HTML and CSS.</p>
             </div>
           </a>
         </div>
