@@ -12,8 +12,31 @@ const Projects = () => {
   return (
     <section className="projects-section" id="projects">
       <h2>Projects</h2>
-      <div className="projects-list">
 
+      <h3 className="projects-subtitle">Open source</h3>
+      <div className="projects-list">
+      <div className="project-details">
+          <div className="project-box">
+            <img src={git} alt="Git Together" />
+            <div className="project-details-text">
+              <h3>Git Together</h3>
+              <p>This is a place for developers where they can post and comment on questions
+              and chat with each other. After registering, users also automatically get a buddy
+              to promote further communication.</p>
+              <p>It was a solo project built in 1 week with React, React Hooks, Django REST and PostgreSQL.</p>
+              <a className="project-icons" href="https://github.com/didemertens/sei-project-4" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+              <a className="project-icons" href="http://lets-git-together.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <FaExternalLinkSquareAlt />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 className="projects-subtitle">My own</h3>
+      <div className="projects-list">
         <div className="project-details">
           <div className="project-box">
             <img src={git} alt="Git Together" />
