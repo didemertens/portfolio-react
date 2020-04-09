@@ -41,6 +41,15 @@
       margin: 30px;
       text-decoration: none;
       color: black;
+
+    .project-info--opensource {
+      color: $dark-grey;
+      font-weight: 800;
+      text-decoration: none;
+      &:hover {
+        color: $dark-grey-green;
+      }
+    }
   
       .project-icons {
         color: $dark-grey;

@@ -7,6 +7,7 @@ import animated from '../assets/animated.png'
 import artJourney from '../assets/art-journey.png'
 import frogger from '../assets/frogger.png'
 import bookBlog from '../assets/book-blog.png'
+import hospitalHero from '../assets/hospitalhero.png'
 
 const Projects = () => {
   return (
@@ -17,17 +18,18 @@ const Projects = () => {
       <div className="projects-list">
       <div className="project-details">
           <div className="project-box">
-            <img src={git} alt="Git Together" />
+            <img src={hospitalHero} alt="Hospital Hero" />
             <div className="project-details-text">
-              <h3>Git Together</h3>
-              <p>This is a place for developers where they can post and comment on questions
-              and chat with each other. After registering, users also automatically get a buddy
-              to promote further communication.</p>
-              <p>It was a solo project built in 1 week with React, React Hooks, Django REST and PostgreSQL.</p>
-              <a className="project-icons" href="https://github.com/didemertens/sei-project-4" target="_blank" rel="noopener noreferrer">
+              <h3>HospitalHero</h3>
+              <p>I'm working as a front-end developer on HospitalHero, which connects healthcare workers 
+                with volunteers who can provide basic needs during the COVID-19 pandemic response.
+                Click <a className="project-info--opensource" href="https://devpost.com/software/feed-a-doc" target="_blank" rel="noopener noreferrer">here</a> for more information.
+                </p>
+              <p>It's an open source project and I've been contributing using React and Material-UI.</p>
+              <a className="project-icons" href="https://github.com/feedadoc/feedadoc" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-              <a className="project-icons" href="http://lets-git-together.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <a className="project-icons" href="https://hospitalhero.care/" target="_blank" rel="noopener noreferrer">
                 <FaExternalLinkSquareAlt />
               </a>
             </div>
