@@ -37,7 +37,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <h3 className="projects-subtitle">My own</h3>
+      <h3 className="projects-subtitle projects-subtitle--own">My own</h3>
       <div className="projects-list">
         <div className="project-details">
           <div className="project-box">
