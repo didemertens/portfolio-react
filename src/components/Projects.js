@@ -46,7 +46,7 @@ const Projects = () => {
               <h3>Pomochore</h3>
               <p>Because having a productive day can be difficult (especially when you have to work from home), 
                 I created a website with a Pomodoro timer and a list of tasks, using test-driven development.</p>
-              <p>I built this in 2 weeks with React, Redux and Material-UI with Enzyme and Jest for testing.</p>
+              <p>I built this in 2 weeks with React, Redux, Enzyme, Jest and Material-UI.</p>
               <a className="project-icons" href="https://github.com/didemertens/pomodoro-app" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
