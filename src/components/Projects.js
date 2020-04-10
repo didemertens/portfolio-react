@@ -6,14 +6,13 @@ import outAbout from '../assets/out-about.png'
 import animated from '../assets/animated.png'
 import artJourney from '../assets/art-journey.png'
 import frogger from '../assets/frogger.png'
-import bookBlog from '../assets/book-blog.png'
+import pomochore from '../assets/pomochore.png'
 import hospitalHero from '../assets/hospitalhero.png'
 
 const Projects = () => {
   return (
     <section className="projects-section" id="projects">
       <h2>Projects</h2>
-
       <h3 className="projects-subtitle">Open source</h3>
       <div className="projects-list">
       <div className="project-details">
@@ -39,6 +38,25 @@ const Projects = () => {
 
       <h3 className="projects-subtitle projects-subtitle--own">My own</h3>
       <div className="projects-list">
+
+      <div className="project-details">
+          <div className="project-box">
+            <img src={pomochore} alt="Pomochore" />
+            <div className="project-details-text">
+              <h3>Pomochore</h3>
+              <p>Because having a productive day can be difficult (especially when you have to work from home), 
+                I created a website with a Pomodoro timer and a list of tasks, using test-driven development.</p>
+              <p>I built this in 2 weeks with React, Redux and Material-UI with Enzyme and Jest for testing.</p>
+              <a className="project-icons" href="https://github.com/didemertens/pomodoro-app" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+              <a className="project-icons" href="https://pomochore.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <FaExternalLinkSquareAlt />
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="project-details">
           <div className="project-box">
             <img src={git} alt="Git Together" />
@@ -130,25 +148,6 @@ const Projects = () => {
                 <FaGithub />
               </a>
               <a className="project-icons" href="https://didemertens.github.io/sei-project-1/" target="_blank" rel="noopener noreferrer">
-                <FaExternalLinkSquareAlt />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="project-details">
-          <div className="project-box">
-            <img src={bookBlog} alt="Book Blog" />
-            <div className="project-details-text">
-              <h3>Book Blog</h3>
-              <p>This is the first website I've ever made after doing a online course on Django.
-              It's a book blog on which I can posts, edit and delete blogs
-            and other users can comment on those blog posts.</p>
-              <p>I built this in 2 weeks with Django, HTML, CSS and jQuery.</p>
-              <a className="project-icons" href="https://github.com/didemertens/bookblog" target="_blank" rel="noopener noreferrer">
-                <FaGithub />
-              </a>
-              <a className="project-icons" href="https://bookblogdide.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                 <FaExternalLinkSquareAlt />
               </a>
             </div>
