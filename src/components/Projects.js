@@ -46,7 +46,7 @@ const Projects = () => {
               <h3>Pomochore</h3>
               <p>Because having a productive day can be difficult (especially when you have to work from home), 
                 I created a website with a Pomodoro timer and a list of tasks, using test-driven development.</p>
-              <p>I built this in 2 weeks with React, Redux, Enzyme, Jest and Material-UI.</p>
+              <p>I built this in 2 weeks with React, Redux and Material-UI and with Enzyme and Jest for testing.</p>
               <a className="project-icons" href="https://github.com/didemertens/pomodoro-app" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
@@ -143,7 +143,7 @@ const Projects = () => {
               <p>I created my own version of the game Frogger in which users need
               to get all 5 witches across the board, avoiding the different obstacles. The player
             uses the arrow keys to move and can pick from 3 difficulty levels.</p>
-              <p>This project took me 9 days, using vanilla JavaScript, HTML and CSS.</p>
+              <p>This game took me 9 days to build and I used vanilla JavaScript, HTML and CSS.</p>
               <a className="project-icons" href="https://github.com/didemertens/sei-project-1" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
