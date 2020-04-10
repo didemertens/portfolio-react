@@ -7,8 +7,8 @@ import SkillsAbout from './SkillsAbout'
 
 class About extends React.Component {
   state = {
-    moreOpen: true,
-    animationVisible: true
+    moreOpen: false,
+    animationVisible: false
   }
 
   ref = React.createRef();
