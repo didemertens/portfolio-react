@@ -42,11 +42,11 @@ class About extends React.Component {
                 be on the other side of that conversation.
                 </p>
                 <p>
-                  I decided it was the right time to switch careers and enrolled in
-                  General Assembly’s Software Engineering Immersive. I recently completed this course where in
+                  At the end of 2019 I decided it was the right time to switch careers and enrolled in
+                  General Assembly’s Software Engineering Immersive. I completed this course where in
                 addition to finetuning my <strong>JavaScript</strong> and <strong>Python</strong> skills, I learned how to build
-                applications using <strong>React</strong>, <strong>Node.js</strong> and <strong>Django</strong>.
-                I am currently looking for a position as a web developer in a passionate and supportive team.</p>
+                applications using <strong>React</strong>, <strong>Node.js</strong> and <strong>Django</strong>. I'm now working
+                as a Software Engineer at Radically Digital where I'm part of an amazingly passionate and supportive team.</p>
               </div>
               <AnimatedOnScroll
                 animationIn="bounceInRight"
