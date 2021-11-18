@@ -46,7 +46,7 @@ class About extends React.Component {
                   General Assembly’s Software Engineering Immersive. I completed this course where in
                 addition to finetuning my <strong>JavaScript</strong> and <strong>Python</strong> skills, I learned how to build
                 applications using <strong>React</strong>, <strong>Node.js</strong> and <strong>Django</strong>. I'm now working
-                as a Software Engineer at Radically Digital where I'm part of an amazingly passionate and supportive team.</p>
+                as a Software Engineer at Futurice where I'm part of an amazingly passionate and supportive team.</p>
               </div>
               <AnimatedOnScroll
                 animationIn="bounceInRight"
